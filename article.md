@@ -37,12 +37,36 @@ and the third is use a Spring configuration server.
 We will try to cover setting up local configuration for each.
 
 When using Java properties, it's fairly simple to use  the same strategy locally.
+With just a few properties, this can be managed directly in a `build.gradle` file like so:
+```groovy
+bootRun {
+    bootRun {
+        jvmArgs =
+                [
+                        "-Dconfig.demo.message='something something'"
+                ]
+    }
+}
+```
+With more properties,
 I typically include a .properties or .yml file appropriate for testing or running locally in my command.
+I prefer not to use the default location to ensure that the local properties do wind up in my build artifact.
+I use the method described [here](https://reflectoring.io/externalizing-properties-gradle-bootrun/) to accomplish this.
 
 When using environment variables to configure the application in production,
-I like to assign environment variables using gradle or maven.
+You can use any tool you prefer to manage environment variables.
+With just a few variables in play,
+I'll usually add them to my build script locally,
+for example:
+```bash
+CONFIG_DEMO_MESSAGE="Hello there" ./gradlew demo:bootRun
+```
+If I have to use more variables,
+[direnv]() is my preferred tool.
 
 When using a Spring Configuration server,
 I believe that is best to use such a server locally as well.
+Unfortunately, [the official]() Docker image doesn't seem to be updated any longer.
+
 
 
