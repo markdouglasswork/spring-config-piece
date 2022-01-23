@@ -1,0 +1,3 @@
+rootProject.name = 'spring-config-piece'
+include 'demo'
+include 'config_server'
