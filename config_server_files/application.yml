@@ -1,0 +1,3 @@
+config:
+  demo:
+    message: "O helo thar"
