@@ -1,3 +1,5 @@
+import org.springframework.boot.gradle.tasks.run.BootRun
+
 plugins {
     id 'org.springframework.boot' version '2.6.3'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
@@ -15,6 +17,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
     implementation 'org.springframework.cloud:spring-cloud-config-client:3.1.0'
@@ -24,18 +27,34 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
-def Properties localBootRunProperties() {
-    Properties p = new Properties();
+Properties localBootRunProperties() {
+    Properties p = new Properties()
     p.load(new FileInputStream(
             file(project.projectDir).absolutePath + "/external_config/application.properties"))
-    return p;
+    return p
 }
 
-bootRun {
-    bootRun {
-        jvmArgs =
-                [
-                        "-Dconfig.demo.message='something something'"
-                ]
+tasks.register('bootRunLocalProps') {
+    doFirst {
+        bootRun.configure {
+            bootRun {
+                jvmArgs =
+                        [
+                                "-Dconfig.demo.message='something something'"
+                        ]
+            }
+        }
     }
+    finalizedBy(bootRun)
+}
+
+tasks.register('bootRunLocalFile') {
+    doFirst {
+        bootRun.configure {
+            doFirst {
+                bootRun.systemProperties = localBootRunProperties()
+            }
+        }
+    }
+    finalizedBy(bootRun)
 }
