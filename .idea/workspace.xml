@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3913c08-5d7b-47f7-9b49-05bbae855586" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/demo/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/external_config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/external_config/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

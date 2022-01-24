@@ -40,7 +40,7 @@ tasks.register('bootRunLocalProps') {
             bootRun {
                 jvmArgs =
                         [
-                                "-Dconfig.demo.message='something something'"
+                                "-Dconfig.demo.message='Message from local property!'"
                         ]
             }
         }
