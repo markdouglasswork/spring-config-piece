@@ -68,9 +68,7 @@
                                 <artifactId>spring-boot-maven-plugin</artifactId>
                                 <configuration>
                                     <systemPropertyVariables>
-                                        <spring.config.location>
-                                            file:////Users/mdouglass/workspace/spring-configuration-piece/demo/external_config/application.yml
-                                        </spring.config.location>
+                                        <config.demo.message>${CONFIG_DEMO_MESSAGE}</config.demo.message>
                                     </systemPropertyVariables>
                                 </configuration>
                             </plugin>

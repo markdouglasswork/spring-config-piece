@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3913c08-5d7b-47f7-9b49-05bbae855586" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/demo/system_props.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_server_files/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config_server_files/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/external_config/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/external_config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/external_config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/external_config/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +70,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo" />
       <recent name="$PROJECT_DIR$/demo/src/main/resources" />
       <recent name="$PROJECT_DIR$/config_server/src/main/resources" />
-      <recent name="$PROJECT_DIR$/demo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo/external_config" />
@@ -132,5 +132,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
