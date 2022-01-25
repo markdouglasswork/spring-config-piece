@@ -68,7 +68,7 @@
                                 <artifactId>spring-boot-maven-plugin</artifactId>
                                 <configuration>
                                     <systemPropertyVariables>
-                                        <config.demo.message>${CONFIG_DEMO_MESSAGE}</config.demo.message>
+                                        <config.demo.message>${INTERMEDIARY_ENV_VAR}</config.demo.message>
                                     </systemPropertyVariables>
                                 </configuration>
                             </plugin>
